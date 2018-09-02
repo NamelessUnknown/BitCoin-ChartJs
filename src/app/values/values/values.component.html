@@ -1,0 +1,54 @@
+<section class="hero has-background-black">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-primary">
+              <i class="fa fa-bitcoin fa-2x center"></i>
+              <h3 class='center'>Simple BitCoin Chart built with bitcoinaverage, angular, and chart.js </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+  <div class="columns">
+    <div class="column">
+        <app-spinner *ngIf="loading"></app-spinner>
+        <div [hidden]="!bitCoinChart">
+          <canvas id="bitCoin">{{ bitCoinChart }}</canvas>
+        </div>
+        <div class="columns">
+          <div class="column">
+            <div class="notification is-danger">
+              <p class="is-size-4 center">Today's min:</p><br>
+              <p class="is-size-5 center">
+                {{ bitCoinMin }}
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="notification is-success">
+                <p class="is-size-4 center">Today's Max:</p><br>
+              <p class="is-size-5 center">
+                {{ bitCoinMax }}
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Simple recap regarding Angular, WebApi and my <i class="fa fa-heart iconBlack"></i> Chart.js
+      </p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/debieclukasz/"> <i class="fa fa-linkedin iconBlack fa-2x" ></i></a>
+        <a href="https://github.com/NamelessUnknown"><i class="fa fa-github fa-2x iconBlack" href=""></i></a> 
+        <a href="#"><i class="fa fa-address-card fa-2x iconBlack"></i></a>
+      </div>
+    </div>
+  </footer>

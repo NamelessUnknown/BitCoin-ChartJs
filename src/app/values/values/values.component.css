@@ -1,0 +1,19 @@
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+h3{
+    color:white
+}
+i{
+    color:white;
+}
+
+.iconBlack {
+	color:black;
+}
+.social *{
+	padding-right:5px;
+}
+
