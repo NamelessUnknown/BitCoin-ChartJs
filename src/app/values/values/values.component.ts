@@ -48,9 +48,7 @@ getBitCoin(){
         timePerH.push(this.bitcoins[i].time.toString().slice(11));
     }
     }  
-    console.log(bitCoinValuesPerH)
     this.loading = false;
-
     this.bitCoinChart = new Chart('bitCoin', {
       type: 'line',
       data:{
